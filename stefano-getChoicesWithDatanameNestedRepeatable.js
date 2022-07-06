@@ -13,3 +13,6 @@ var repeatableRegistroLlegada = sectionTemp.elements.filter(i => repeatableRegis
 var llegadaMaterialSingleChoice = repeatableRegistroLlegada.elements.filter(i => llegada_dataname == i.data_name)[0];
 
 SETRESULT(JSON.stringify(llegadaMaterialSingleChoice.choices));
+
+//An easier way would be using the FIELD() function existing in Fulcrum
+//SETRESULT(JSON.stringify(FIELD('llegada_material_2').choices));
